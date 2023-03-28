@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="content_wrapper">
+        <div class="content">
+            <div class="title_wrapper">
+                <span class="title">To Do List</span>
+            </div>
+            <div id="list_wrapper" class="list_wrapper">
+            </div>
+            <div class="list_options_wrapper showed">
+                <div class="close_wrapper" onclick="showOptions()">
+                    <img src="./Images/arrow.jpg" class="close_icon">
+                </div>
+                <div class="add_wrapper" id="add_wrapper">
+                    <span class="add_icon" onclick="addItem(`show`)">+</span>
+                    <div class="add_input_wrapper">
+                        <input type="text" id="add_input" class="add_input closed" placeholder="Enter a task or case" maxlength="33">
+                    </div>
+                </div>
+                <div class="filter_wrapper" onclick="filterList()">
+                    Remove Completed
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
